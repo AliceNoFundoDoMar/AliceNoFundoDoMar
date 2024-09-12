@@ -1,0 +1,143 @@
+body{
+    background-image: url(imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+}
+
+#bolhas{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.grupo{
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(110, 221, 255, 0.674);
+    width: 75vw;
+    height: auto;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 
+    5px 10px 10px rgba(255, 215, 0, 0.7), /* Luz dourada suave */
+    -10px 5px 20px rgba(255, 215, 0, 0.5), /* Luz dourada média */
+    3px 10px 30px rgba(255, 215, 0, 0.3); /* Luz dourada mais forte */
+}
+
+.conteudo{
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: inherit;    
+    font-weight: 700;
+    font-style: normal;
+    font-size: 90%;
+}
+
+.info{
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: inherit;    
+    font-weight: 700;
+    font-style: normal;  
+    
+
+}
+table.info{
+    margin: auto;
+    padding-top: 5px;
+    position: relative;
+    font-size: 90%;
+    
+}
+
+table.info th:last-child, table.info td:last-child{
+    border-left: 3px solid #000000;
+    padding-left: 20px;
+    
+}
+
+table.info th:first-child, table.info td:first-child{
+    padding-right: 20px;
+}
+
+.fora{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    bottom: 10px; /* Ajuste conforme necessário para criar um espaço do fundo */
+    left: 10px; /* Ajuste conforme necessário para o alinhamento horizontal */
+    right: 10px; /* Ajuste conforme necessário para o alinhamento horizontal */
+    text-align: center;
+}
+
+.chegar, .confirmar{
+    padding: 0px;
+    text-align: center;
+    color: inherit; 
+    text-decoration: none; 
+    outline: none; 
+    cursor: pointer;
+
+    border-radius: 10px;
+    color: #fff; /* Cor do texto principal */
+    text-shadow: 
+        1px 1px 0 #6fc3df,   /* Sombra azul clara */
+        2px 2px 0 #1a8db7,   /* Sombra azul mais escura */
+        3px 3px 2px rgba(0, 0, 0, 0.2), /* Sombra preta com opacidade para profundidade */
+        4px 15px 3px rgba(0, 0, 0, 0.3), /* Sombra preta mais escura para efeito 3D */
+        5px 9px 5px rgba(0, 0, 0, 0.9); /* Sombra final para aumentar o efeito 3D */
+
+}
+
+.titulo {
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-size: 200%;
+    color: #fff; /* Cor do texto principal */
+    text-shadow: 
+        1px 1px 0 #6fc3df,   /* Sombra azul clara */
+        2px 2px 0 #1a8db7,   /* Sombra azul mais escura */
+        3px 3px 2px rgba(0, 0, 0, 0.2), /* Sombra preta com opacidade para profundidade */
+        4px 15px 3px rgba(0, 0, 0, 0.3), /* Sombra preta mais escura para efeito 3D */
+        5px 9px 5px rgba(0, 0, 0, 0.9); /* Sombra final para aumentar o efeito 3D */
+    margin: 5px -5px 5px -5px;
+    position: relative;
+}
+
+@keyframes titleAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.titulo {
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-size: 200%;
+    color: #fff;
+    text-shadow: 
+        1px 1px 0 #6fc3df,
+        2px 2px 0 #1a8db7,
+        3px 3px 2px rgba(0, 0, 0, 0.2),
+        4px 15px 3px rgba(0, 0, 0, 0.3),
+        5px 9px 5px rgba(0, 0, 0, 0.9);
+    margin: 5px -5px 5px -5px;
+    position: relative;
+    animation: titleAnimation 2s ease-out;
+}
